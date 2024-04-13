@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+.Main {
+
+    p {
+        font-family: "Epilogue", sans-serif;
+        color: #fff;
+    }
+
+    button {
+        width: 40px;
+        height: 40px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 8px;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        opacity: 0.5;
+
+    }
+
+    button:hover {
+        cursor: pointer;
+        border: 1px solid #fff;
+        opacity: 1;
+    }
+
+    .btns_swiper {
+        width: 92px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Swiper {
+        width: 436px;
+    }
+
+    .swipper_bootom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .swipper_buttons {
+        display: flex;
+        width: 92px;
+        justify-content: space-between;
+    }
+
+    .swipper_count {
+        display: flex;
+        align-items: center;
+        width: 82px;
+        justify-content: space-between;
+        margin-top: auto;
+    }
+
+}
+
+@media(max-width: 768px) {
+    .Main {
+        width: 266px;
+        height: 252px;
+
+        .Swiper {
+            display: flex;
+            width: 266px;
+            flex-wrap: wrap;
+
+            .swipper_bootom {
+                width: 266px;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+                align-items: center;
+            }
+
+            .swipper_count {
+                display: flex;
+                align-items: center;
+                width: 82px;
+                justify-content: space-between;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+        }
+
+
+    }
+}

@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+.Block {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px 132px;
+    width: 1433px;
+    height: 1651px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+    .Block_row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 1176px;
+        height: 1361px;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Block_row h2 {
+        font-family: "Epilogue", sans-serif;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 110%;
+        letter-spacing: -0.02em;
+        color: #1e2827;
+        margin-bottom: 64px;
+    }
+
+    .cards {
+        width: 1176px;
+        height: 1253px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+    }
+
+    form {
+        margin-left: auto;
+        height: 50px;
+    }
+
+    .input {
+        border-radius: 8px;
+        padding: 18px 35px;
+        width: 122px;
+        height: 50px;
+        background: #1e2827;
+        font-family: "Epilogue", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 117%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        border: 0;
+        cursor: pointer;
+        transform: scale(1);
+        transition: 0.7s;
+    }
+
+    .input:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media(max-width: 1305px) {
+    .Block {
+        width: 100%;
+        height: 2034px;
+
+        .Block_row {
+            width: auto;
+            height: auto;
+        }
+
+        .cards {
+            width: 100%;
+            height: 1760px;
+            flex-wrap: wrap;
+        }
+    }
+
+}
+
+@media(max-width: 1100px) {
+    .Block {
+        width: 100%;
+        height: 3034px;
+
+        .Block_row {
+            width: auto;
+            height: auto;
+        }
+
+        .cards {
+            width: 100%;
+            height: 2860px;
+            flex-wrap: wrap;
+        }
+    }
+
+}
+
+@media(max-width: 948px) {
+    .Block {
+        width: 100%;
+        height: 6234px;
+
+        .Block_row {
+            width: auto;
+            height: auto;
+            
+        }
+
+        .cards {
+            width: 100%;
+            height: 5560px;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h2 {
+            margin-left: 10%;
+        }
+
+
+    }
+
+}
+@media(max-width: 553px) {
+    .Block {
+        padding: 0;
+    }
+}

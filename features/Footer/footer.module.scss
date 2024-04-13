@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+.footer {
+    width: 100%;
+    height: 534px;
+    background: #1e2827;
+    margin-left: auto;
+    margin-right: auto;
+
+    .footer_row {
+        max-width: 1176px;
+        height: 502px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer_top {
+        width: 645px;
+        height: 108px;
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            font-family: "Epilogue", sans-serif;
+            font-weight: 400;
+            list-style: none;
+            font-size: 18px;
+            line-height: 133%;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            color: #fff;
+            width: 115px;
+            height: 108px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        li {
+            width: 81px;
+            height: 24px;
+        }
+    }
+
+    .footer_bottom {
+        font-family: "Epilogue", sans-serif;
+        width: 217px;
+        height: 18px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: auto;
+
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 129%;
+            letter-spacing: -0.02em;
+            text-align: right;
+            color: #c6cdd1;
+        }
+    }
+
+
+} 
+   @media(max-width: 1430px) {
+        .footer_bottom {
+            margin-right: 2%;
+        }
+
+        .footer_top {
+            width: 50%;
+            margin-left: 2%;
+        }
+    }
+
+    @media(max-width: 768px) {
+
+
+        .footer_row {
+            flex-wrap: wrap;
+            height: 100%;
+        }
+
+        .footer_bottom {
+            margin-top: 0;
+            width: 217px;
+            margin-left: 1%;
+        }
+
+        .footer_top {
+            width: 100%;
+            height: 82px;
+            margin-left: 2%;
+        }
+
+    }

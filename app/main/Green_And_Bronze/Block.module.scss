@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+.Block {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px 132px;
+    max-width: 1433px;
+    height: 772px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    .Block_row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 590px;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Block_row p {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 117%;
+        letter-spacing: 0.06em;
+        color: rgba(20, 20, 20, 0.4);
+        font-family: "Epilogue", sans-serif;
+    }
+
+    .Block_row h2 {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 110%;
+        letter-spacing: -0.02em;
+        color: #1e2827;
+        font-family: "Epilogue", sans-serif;
+        width: 448px;
+        height: 88px;
+        margin-top: 8px;
+    }
+
+    .Block_imgs {
+        width: 1176px;
+        height: 422px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Block_imgs_medium {
+        width: 704px;
+        height: 260px;
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Block_imgs_small {
+        width: 335px;
+        height: 540px;
+        flex-wrap: wrap;
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+@media(max-width: 1305px) {
+    .Block {
+        width: 100%;
+        height: 704px;
+
+        .Block_row {
+            width: 704px;
+            height: 410px;
+        }
+
+        .Block_imgs {
+            display: none;
+        }
+
+        .Block_imgs_medium {
+            display: flex;
+        }
+    }
+
+}
+
+@media(max-width: 930px) {
+    .Block {
+        width: 100%;
+        height: 722px;
+
+        .Block_row {
+            height: 722px;
+            width: 375px;   
+        }
+
+        .Block_imgs {
+            display: none;
+        }
+
+        .Block_imgs_medium {
+            display: flex;
+            flex-wrap: wrap;
+            width: 335px;
+            height: 540px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .Block_text_div {
+            width: 100%;
+            height: 142px;
+        }
+        .Block_text_div h2{
+            width: 375px;   
+        }
+    }
+
+}
+@media(max-width: 553px) {
+    .Block {
+        padding: 0;
+    }
+}
