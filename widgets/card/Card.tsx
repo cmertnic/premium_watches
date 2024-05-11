@@ -1,9 +1,14 @@
 "use client"
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import style from "@/widgets/card/Card.module.scss";
 import { useState } from "react";
-const Card = ({ title, img, text }) => {
+interface CardProps {
+    img: StaticImageData;
+    title: string;
+    text: string;
+}
+const Card = ({ title, img, text }: CardProps) => {
     const [ismodal, setmodal] = useState(false)
 
 
